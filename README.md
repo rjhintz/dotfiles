@@ -11,7 +11,8 @@ Need symbolic links
 `ln -s ~/dotfiles/vimrc ~/.vimrc`
 
 -------------
-Instead of below, use Tweak Tool (aka Gnome Tweak Tool). See `Typing` tab
+Instead of below, use Tweak Tool (aka Gnome Tweak Tool). See `Typing` tab. Removed file `xmodmaprc` and symlinks
+
 `ln -s ~/dotfiles/xmodmaprc ~/.xmodmaprc` <==doesn't seem to work (anymore)
 
 `ln -s ~/dotfiles/xmodmaprc ~/.xmodmap`  <==never worked
