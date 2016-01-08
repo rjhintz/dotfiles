@@ -10,4 +10,6 @@ Need symbolic links
 
 `ln -s ~/dotfiles/vimrc ~/.vimrc`
 
-`ln -s ~/dotfiles/xmodmaprc ~/.xmodmaprc`
+`ln -s ~/dotfiles/xmodmaprc ~/.xmodmaprc` <==doesn't seem to work (anymore)
+
+`ln -s ~/dotfiles/xmodmaprc ~/.xmodmap`  <==never worked
