@@ -26,6 +26,7 @@ set wildmenu
 set lazyredraw
 " highlight matching [{()}] 
 set showmatch
+highlight MatchParen cterm=bold ctermfg=16 ctermbg=227
 " search as characters are entered
 set incsearch
 " highlight matches
