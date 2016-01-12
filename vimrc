@@ -26,6 +26,7 @@ set wildmenu
 set lazyredraw
 " highlight matching [{()}] 
 set showmatch
+" 16 = Grey0; 227 = LightGoldenrod1
 highlight MatchParen cterm=bold ctermfg=16 ctermbg=227
 " search as characters are entered
 set incsearch
@@ -49,3 +50,5 @@ endif
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType json setlocal shiftwidth=2 tabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
+autocmd InsertEnter * set number
+autocmd InsertLeave * set relativenumber
