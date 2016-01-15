@@ -1,5 +1,4 @@
 "2015 12 17                                                                    
-"Rev 2016 01 08"
 set encoding=utf8
 "
 colorscheme default

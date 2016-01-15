@@ -22,3 +22,4 @@ if [ -d "$HOME/bin" ] ; then
 fi
 export PATH=$PATH:~/packer
 export PATH=$PATH:~/vault
+export PATH=$PATH:~/consul
