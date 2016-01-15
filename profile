@@ -15,11 +15,14 @@ if [ -n "$BASH_VERSION" ]; then
 	. "$HOME/.bashrc"
     fi
 fi
-
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
+# Guard against tmux duplicating entries in PATH
+# http://unix.stackexchange.com/questions/124528/rvm-tmux-duplicate-entries-in-path
+if [ "$PATHS" != "true" ]; then
+    export PATHS="true"
+    #following 4 lines from default
+    # set PATH so it includes user's private bin if it exists
+    if [ -d "$HOME/bin" ] ; then
+       PATH="$HOME/bin:$PATH"
+    fi
+    export PATH=$PATH:~/packer:~/vault:~/consul
 fi
-export PATH=$PATH:~/packer
-export PATH=$PATH:~/vault
-export PATH=$PATH:~/consul
