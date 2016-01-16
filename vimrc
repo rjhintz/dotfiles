@@ -1,4 +1,4 @@
-"2015 12 17                                                                    
+"2015 12 17
 set encoding=utf8
 "
 colorscheme default
@@ -23,7 +23,7 @@ filetype indent on
 "graphical menu of all the matches you can cycle through
 set wildmenu
 set lazyredraw
-" highlight matching [{()}] 
+" highlight matching [{()}]
 set showmatch
 " 16 = Grey0; 227 = LightGoldenrod1
 highlight MatchParen cterm=bold ctermfg=16 ctermbg=227
@@ -49,8 +49,21 @@ endif
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType json setlocal shiftwidth=2 tabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
-autocmd InsertEnter * set number
-autocmd InsertLeave * set relativenumber
+" Toggle number / relative number when entering/leaving Insert mode
+" http://stackoverflow.com/questions/28731418/vim-set-number-not-working-on-insertenter
+set rnu
+function ToggleNumbersOn()
+    set rnu!
+    set nu
+endfunction
+function ToggleRelativeOn()
+    set nu!
+    set rnu
+endfunction
+autocmd FocusLost * call ToggleNumbersOn()
+autocmd FocusGained * call ToggleRelativeOn()
+autocmd InsertEnter * call ToggleNumbersOn()
+autocmd InsertLeave * call ToggleRelativeOn()
 " Highlight trailing white space
 " http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 highlight ExtraWhitespace ctermbg=red guibg=red
