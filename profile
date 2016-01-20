@@ -17,8 +17,8 @@ if [ -n "$BASH_VERSION" ]; then
 fi
 # Guard against tmux duplicating entries in PATH
 # http://unix.stackexchange.com/questions/124528/rvm-tmux-duplicate-entries-in-path
-if [ "$PATHS" != "true" ]; then
-    export PATHS="true"
+if [ "$PATHSET" != "true" ]; then
+    export PATHSET="true"
     #following 4 lines from default
     # set PATH so it includes user's private bin if it exists
     if [ -d "$HOME/bin" ] ; then
