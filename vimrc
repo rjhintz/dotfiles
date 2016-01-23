@@ -13,6 +13,9 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 "
+" Display status line always
+:set laststatus=2
+"
 set relativenumber
 set number
 " show command in bottom bar
@@ -25,8 +28,8 @@ set wildmenu
 set lazyredraw
 " highlight matching [{()}]
 set showmatch
-" 16 = Grey0; 227 = LightGoldenrod1
-highlight MatchParen cterm=bold ctermfg=16 ctermbg=227
+" 196 = Red1 ; 226 = Yellow1
+highlight MatchParen cterm=reverse ctermfg=9 ctermbg=226
 " search as characters are entered
 set incsearch
 " highlight matches
