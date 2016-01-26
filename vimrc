@@ -2,6 +2,8 @@
 set encoding=utf8
 "
 colorscheme default
+" hi User1 ctermfg=190 ctermfg=255 guifg=190 guibg=255
+hi statusline ctermfg=255 ctermfg=190 guifg=190 guibg=255
 "
 set autoindent
 "
@@ -15,6 +17,8 @@ set expandtab
 "
 " Display status line always
 :set laststatus=2
+" set statusline=%1*%F%m%r%h%w\ [%{&ff}]\ [TYPE=%Y]\ [POS=%v][%p%%]\ %{strftime(\"%H:%M\")}
+set statusline=%F%m%r%h%w\ [%{&ff}]\ [TYPE=%Y]\ [COL=%v][%p%%]
 "
 set relativenumber
 set number
