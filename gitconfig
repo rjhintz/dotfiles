@@ -1,7 +1,23 @@
-user.name=Rich Hintz
-user.email=rjhintz@gmail.com
-color.ui=auto
-alias.st=status
-alias.br=branch
-alias.co=checkout
-core.editor=vim
+# '#' or ';' indicate comment
+[user]
+        name = Rich Hintz
+        email = rjhintz@gmail.com
+[color]
+        ui = auto
+[alias]
+        st = status
+        br = branch
+        cm = commit
+# push default
+# simple - in centralized workflow, work like "upstream" with an added safety
+# to refuse to push if the upstream branch’s name is different from the local one.
+#
+# When pushing to a remote that is different from the remote you normally pull from,
+# work as current. This is the safest option and is suited for beginners.
+#
+# This mode has become the default in Git 2.0.
+# http://git-scm.com/docs/git-config.html
+[push]
+        default = simple
+[core]
+        editor = vim
