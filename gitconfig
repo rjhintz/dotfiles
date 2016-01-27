@@ -1,0 +1,7 @@
+user.name=Rich Hintz
+user.email=rjhintz@gmail.com
+color.ui=auto
+alias.st=status
+alias.br=branch
+alias.co=checkout
+core.editor=vim
