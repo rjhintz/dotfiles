@@ -1,13 +1,14 @@
 # '#' or ';' indicate comment
-[user]
-        name = Rich Hintz
-        email = rjhintz@gmail.com
-[color]
-        ui = auto
 [alias]
         st = status
         br = branch
         cm = commit
+[color]
+        ui = auto
+[core]
+        editor = vim
+[fetch]
+        fsckobjects=true
 # push default
 # simple - in centralized workflow, work like "upstream" with an added safety
 # to refuse to push if the upstream branch’s name is different from the local one.
@@ -19,5 +20,10 @@
 # http://git-scm.com/docs/git-config.html
 [push]
         default = simple
-[core]
-        editor = vim
+[receive]
+        fsckobjects=true
+[transfer]
+        fsckobjects=true
+[user]
+        name = Rich Hintz
+        email = rjhintz@gmail.com
