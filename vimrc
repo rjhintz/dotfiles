@@ -102,6 +102,9 @@ set hlsearch
 " 16 = Grey0; 227 = LightGoldenrod1
 highlight Search ctermfg=16 ctermbg=227
 highlight Search guifg=16 guibg=227
+" highlight Visual
+highlight Visual ctermfg=16 ctermbg=227
+highlight Visual guifg=16 guibg=227
 "
 " if has("autocmd")
    " Enable file type detection.
@@ -130,7 +133,7 @@ autocmd FocusLost * call ToggleNumbersOn()
 autocmd FocusGained * call ToggleRelativeOn()
 autocmd InsertEnter * call ToggleNumbersOn()
 autocmd InsertLeave * call ToggleRelativeOn()
-" Highlight trailing white space
+" Highlight trailing white space in red
 " http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
