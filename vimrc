@@ -1,9 +1,10 @@
 "2015 12 17
-set encoding=utf8
 " """""""""""""""""""""""""""""
 " Add for Vundle
 " """"""""""""""""""""""""""""
 set nocompatible              " be iMproved, required
+set encoding=utf8
+set history=1000
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
