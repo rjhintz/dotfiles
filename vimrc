@@ -38,6 +38,12 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 " -------------------------------------
+"  Python autocomplete
+Plugin 'davidhalter/jedi-vim'
+" -------------------------------------
+"  Supertab
+Plugin 'ervandew/supertab'
+" -------------------------------------
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
