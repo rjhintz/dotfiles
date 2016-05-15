@@ -55,12 +55,12 @@ filetype plugin indent on    " required
 " -------------------------------------
 " End Vundle Specifics
 " -------------------------------------
-set encoding=utf8
+set encoding=utf8 " also sets fileencoding to same value
 set history=1000
-" -------------------------------------
-filetype indent on
+set laststatus=2
 " -------------------------------------
 colorscheme default
+let g:airline_theme='solarized'
 " -------------------------------------
 set autoindent
 " -------------------------------------
