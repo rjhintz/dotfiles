@@ -2,7 +2,7 @@
 
 ## Setup
 
-Need symbolic links
+Requied symbolic links
 
 `ln -s target_path link_path`
 
@@ -11,10 +11,13 @@ Need symbolic links
 -----------
 
 ```
-ln -s ~/dotfiles/gitconfig ~/.gitconfig
-ln -s ~/dotfiles/profile ~/.profile
-ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
-ln -s ~/dotfiles/vimrc ~/.vimrc
+sudo ln -s ~/dotfiles/gitconfig ~/.gitconfig
+
+sudo ln -s ~/dotfiles/profile ~/.profile  <--may not work for AWS
+
+sudo ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
+
+sudo ln -s ~/dotfiles/vimrc ~/.vimrc
 ```
 
 -------------
