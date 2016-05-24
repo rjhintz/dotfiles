@@ -134,3 +134,5 @@ autocmd BufWinLeave * call clearmatches()
 " -------------------------------------
 " folding behavior
 set foldcolumn=4
+" spell check for *.md
+autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us
