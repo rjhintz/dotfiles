@@ -136,3 +136,13 @@ autocmd BufWinLeave * call clearmatches()
 set foldcolumn=4
 " spell check for *.md
 autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us
+" http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
+" 16 = Grey0; 156 = PaleGreen1
+highlight SpellBad ctermfg=16 ctermbg=156
+highlight SpellBad guifg=16 guibg=156
+highlight SpellCap ctermfg=16 ctermbg=156
+highlight SpellCap guifg=16 guibg=156
+highlight SpellRare guifg=16 guibg=156
+highlight SpellRare ctermfg=16 ctermbg=156
+highlight SpellLocal guifg=16 guibg=156
+highlight SpellLocal ctermfg=16 ctermbg=156
