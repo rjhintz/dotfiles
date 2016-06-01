@@ -146,3 +146,7 @@ highlight SpellRare guifg=16 guibg=156
 highlight SpellRare ctermfg=16 ctermbg=156
 highlight SpellLocal guifg=16 guibg=156
 highlight SpellLocal ctermfg=16 ctermbg=156
+"
+" Mouse support
+"
+set mouse=a
