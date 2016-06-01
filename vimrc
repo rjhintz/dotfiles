@@ -69,6 +69,10 @@ colorscheme default
 let g:airline_theme='solarized'
 " -------------------------------------
 set autoindent
+set autowrite " Automatically save before commands like :next and :make
+" -------------------------------------
+" Hide buffers when they are abandoned
+set hidden
 " -------------------------------------
 syntax enable
 " -------------------------------------
@@ -93,6 +97,8 @@ set showmatch
 highlight MatchParen cterm=reverse ctermfg=9 ctermbg=226
 " search as characters are entered
 " -------------------------------------
+set ignorecase
+set smartcase
 set incsearch
 " highlight matches
 set hlsearch
