@@ -106,7 +106,7 @@ set hlsearch
 " Color names/values
 " http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
 " 16 = Grey0; 227 = LightGoldenrod1
-highlight Search ctermfg=16 ctermbg=227
+highlight Search cterm=bold ctermfg=16 ctermbg=227
 highlight Search guifg=16 guibg=227
 " -------------------------------------
 " highlight Visual
@@ -156,3 +156,12 @@ highlight SpellLocal ctermfg=16 ctermbg=156
 " Mouse support
 "
 set mouse=a
+"
+" Diff highlighting
+" http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
+" http://misc.flogisoft.com/bash/tip_colors_and_formatting
+"
+highlight DiffAdd    cterm=bold ctermfg=16 ctermbg=3   gui=none guifg=bg guibg=Red
+highlight DiffDelete cterm=bold ctermfg=16 ctermbg=153 gui=none guifg=bg guibg=Red
+highlight DiffChange cterm=bold ctermfg=16 ctermbg=86 gui=none guifg=bg guibg=Red
+highlight DiffText   cterm=bold ctermfg=16 ctermbg=222 gui=none guifg=bg guibg=Red
