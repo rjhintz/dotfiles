@@ -2,7 +2,7 @@
 
 ## Setup
 
-Requied symbolic links
+Required symbolic links
 
 `ln -s target_path link_path`
 
@@ -13,7 +13,7 @@ Requied symbolic links
 ```
 sudo ln -s ~/dotfiles/gitconfig ~/.gitconfig
 
-sudo ln -s ~/dotfiles/profile ~/.profile  <--may not work for AWS
+sudo ln -s ~/dotfiles/profile ~/.profile  #  <--may not work for AWS
 
 sudo ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 
