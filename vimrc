@@ -79,7 +79,9 @@ syntax enable
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set textwidth=80
 set expandtab
+set smarttab
 " -------------------------------------
 set relativenumber
 set number
@@ -165,3 +167,7 @@ highlight DiffAdd    cterm=bold ctermfg=16 ctermbg=3   gui=none guifg=bg guibg=R
 highlight DiffDelete cterm=bold ctermfg=16 ctermbg=153 gui=none guifg=bg guibg=Red
 highlight DiffChange cterm=bold ctermfg=16 ctermbg=86 gui=none guifg=bg guibg=Red
 highlight DiffText   cterm=bold ctermfg=16 ctermbg=222 gui=none guifg=bg guibg=Red
+"
+" Todo highlighting
+"
+highlight Todo    cterm=bold ctermfg=16 ctermbg=156   gui=none guifg=bg guibg=Red
