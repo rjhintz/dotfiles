@@ -109,11 +109,11 @@ set hlsearch
 " http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
 " 16 = Grey0; 227 = LightGoldenrod1
 highlight Search cterm=bold ctermfg=16 ctermbg=227
-highlight Search guifg=16 guibg=227
+highlight Search guifg=#000000 guibg=#ffff5f
 " -------------------------------------
 " highlight Visual
 highlight Visual ctermfg=16 ctermbg=227
-highlight Visual guifg=16 guibg=227
+highlight Visual guifg=#000000 guibg=#ffff5f
 " -------------------------------------
 " Toggle number / relative number when entering/leaving Insert mode
 " http://stackoverflow.com/questions/28731418/vim-set-number-not-working-on-insertenter
@@ -147,12 +147,12 @@ autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us
 " http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
 " 16 = Grey0; 156 = PaleGreen1
 highlight SpellBad ctermfg=16 ctermbg=156
-highlight SpellBad guifg=16 guibg=156
+highlight SpellBad guifg=#000000 guibg=#afff87
 highlight SpellCap ctermfg=16 ctermbg=156
-highlight SpellCap guifg=16 guibg=156
-highlight SpellRare guifg=16 guibg=156
+highlight SpellCap guifg=#000000 guibg=#afff87
+highlight SpellRare guifg=#000000 guibg=#afff87
 highlight SpellRare ctermfg=16 ctermbg=156
-highlight SpellLocal guifg=16 guibg=156
+highlight SpellLocal guifg=#000000 guibg=#afff87
 highlight SpellLocal ctermfg=16 ctermbg=156
 "
 " Mouse support
